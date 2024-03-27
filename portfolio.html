@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranin's portfolio</title>
+    <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BI==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+        <div class="container">
+            <div class="header">
+                <a href="" class="logo">
+                    <img src="file/logo.webp" alt="" class="signature">
+                    <i class="fa fa-bolt"></i>
+                </a>
+               
+                   
+                <ul class="navbar">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#education"> Education</a></li>
+                    <li><a href="#projects"> Skills</a></li>
+                    <li><a href="#contact"> Contact</a></li>
+                </ul>
+                
+                <div class="menu_icon">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+            </div>
+        </div> 
+    </header>
+    <section class="about-area" id="home">
+        <div class="container">
+            <div class="home">
+                
+                <div class="about-content">
+                    <h4><em>RANIN FAHMITHA</em></h4>
+                    <h1>ABOUT ME</h1>
+                    <ul>
+                      <li>I am Ranin Fahmitha from India</h1>
+                      <li>I am currently pursuing my second year Bachelor's Degree in Information Technology.</li>
+                      <li> Responsible and motivated student ready to apply education in the workplace. Offers excellent technical abilities with software and applications, ability to handle challenging work, and excellent time management skills.
+                      </li>
+                    </ul>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="education-content" id="education">
+        <div class="container">
+            <div class="row">
+                <div class="education ">
+                    <h1 class="title">EDUCATION</h1>
+                    <div class="row">
+                        <div class="timeline-box">
+                            <div class="timeline">
+
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">
+                                        B.E ECE-86%
+                                    </h3>
+                                    <h4 class="timeline-title">Anna university </h4>
+                                    <h4 class="timeline-title">
+                                        <i class="fa fa-calendar"></i> 2022-present
+                                    </h4>
+                                </div> 
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">HSC-85%</h3>
+                                    <h4 class="timeline-title">Sri Shanmuka matric higher secondary school</h4>
+                                    <h4 class="timeline-title">
+                                        <i class="fa fa-calendar"></i> 2020-2022
+                                    </h4>
+                                </div>
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">
+                                        SSLC-73%
+                                    </h3>
+                                    <h4 class="timeline-title"> Ashoka sishu vihar matric higher secondary school</h4>
+                                    <h4 class="timeline-title">
+                                        <i class="fa fa-calendar"></i> 2018-2020
+                                    </h4>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img"><img src="file\education.png" alt="yes"></div>
+               
+            </div>
+        </div>
+    </section>
+    <section class="project-content" id="projects">
+        <div class="container">
+            <div class="project-title">
+                <h4>Skills</h4>
+            </div>
+            <div class="projects">
+                <!-- 1st Project -->
+                <div class="project">
+                    <img src="file\back-end.jpeg" alt="yes">
+                    <i class="fa-solid fa-server"></i>
+                    <h4>Back-end development</h4>
+                    <p>I am skilled in python back-end development,Django web frameworks.</p>
+                </div>
+                 <!-- 2nd Project -->
+                 <div class="project">
+                    <img src="file\programming.jpeg" alt="yes">
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Programming</h4>
+                    <p>I am skilled in programming languages such as Python,Java and have a knowledge of problem solving skills</p>
+                </div>
+                <!-- 3rd Project -->
+                    
+                <div class="project">
+                    <img src="file\web development.jpeg" alt="yes">
+                    <i class="fa-brands fa-html5"></i>
+                    <h4>Web Development</h4>
+                    <p>I have created landing page, portfolio website using HTML,CSS,Javascript and worked as an web development intern at prodigy infotech
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="heading">CONTACT <span>ME</span></h1>
+        <form onsubmit="sendEmail()"; reset(); return false;>
+            <div class="input-box">
+                <input type="text" placeholder="Full name">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    <script scr="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "raninrafa2004@gmail.com",
+                Password : "",
+                To : 'raninfahmitha2004@gmail.com.com',
+                From : document.getElementById("email").value,
+                Subject : "This is the subject",
+                 Body : "And this is the body"
+        }).then(
+        message => alert(message)
+        );
+
+        }
+    </script>    
+    <script src="script.js"></script>
+   <footer>
+       </footer>
+
+</body>
+</html>
+
